@@ -26,6 +26,20 @@ Ich verbinde fast 11 Jahre kundenorientierte Berufspraxis, darunter mehrere Jahr
 
 ## Projekte, die zeigen, wie ich arbeite
 
+### 🚀 Bewerbungs-Workflow · End-to-End-Automatisierung
+
+Phasengesteuertes System für die tägliche Suche nach vollständig remote ausgeübten IT-Rollen: Mehrere Stellenquellen fließen in eine beleggestützte Pipeline, die Treffer zusammenführt, Duplikate entfernt, Volltexte prüft, Kandidaten bewertet und den Bearbeitungsstand dauerhaft in einem SQLite-Ledger festhält. Abgebrochene oder teilweise erfolgreiche Läufe bleiben nachvollziehbar und können kontrolliert fortgesetzt werden.
+
+Aus einem verbindlichen Master-CV und gesperrten Vorlagen entstehen passgenaue HTML- und PDF-Unterlagen, ohne Fähigkeiten hinzuzuerfinden. Harte Quality Gates prüfen unter anderem Remote-Nachweise, UTF-8, PDF-Text, Tracker-Konsistenz und vollständige Laufartefakte, bevor eine Bewerbung als vorbereitet gilt.
+
+![Python](https://img.shields.io/badge/Python-Orchestrierung-3776AB?style=flat-square&logo=python&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-Kandidaten--Ledger-003B57?style=flat-square&logo=sqlite&logoColor=white)
+![Pytest](https://img.shields.io/badge/Pytest-Regressionstests-0A9EDC?style=flat-square&logo=pytest&logoColor=white)
+![Workflow](https://img.shields.io/badge/Workflow-Phasengesteuert-7C3AED?style=flat-square)
+![QA](https://img.shields.io/badge/QA-UTF--8_·_HTML_·_PDF-0F766E?style=flat-square)
+
+_Privates Praxisprojekt: Architektur und Funktionsumfang sind hier beschrieben; persönliche Bewerbungs- und Trackingdaten bleiben geschützt._
+
 ### 🎟️ [Event Planner auf AWS](https://github.com/Mvstnz/praxisphase-event-planner)
 
 Im Team umgesetzte Web-App mit Login, Event-Verwaltung, Ticketmaster-Anbindung, Bildspeicher und Kalenderexport. Die Anwendung läuft containerisiert auf AWS. CI, kontrolliertes Deployment und Teile der Infrastruktur sind als Code abgebildet.
