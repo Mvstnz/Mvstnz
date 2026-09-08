@@ -1,47 +1,71 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-labelledby="title description">
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" role="img" aria-labelledby="title description">
   <title id="title">Marvin Stenzel</title>
-  <desc id="description">IT-Support, Automatisierung und Cloud-Grundlagen</desc>
+  <desc id="description">IT support, AI automation and reliable workflows</desc>
+
   <defs>
     <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#07111f"/>
-      <stop offset="0.55" stop-color="#111b32"/>
+      <stop offset="0.58" stop-color="#0f1c31"/>
       <stop offset="1" stop-color="#172554"/>
     </linearGradient>
     <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#38bdf8"/>
-      <stop offset="0.52" stop-color="#818cf8"/>
-      <stop offset="1" stop-color="#a78bfa"/>
+      <stop offset="0" stop-color="#22c55e"/>
+      <stop offset="0.5" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#818cf8"/>
     </linearGradient>
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M40 0H0V40" fill="none" stroke="#94a3b8" stroke-opacity=".08"/>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" fill="none" stroke="#cbd5e1" stroke-opacity="0.055"/>
     </pattern>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
   </defs>
 
-  <rect width="1280" height="360" rx="26" fill="url(#background)"/>
-  <rect width="1280" height="360" rx="26" fill="url(#grid)"/>
-  <path d="M0 309C220 247 332 348 549 286C772 222 892 248 1280 118V360H0Z" fill="#38bdf8" opacity=".045"/>
-  <path d="M0 337C234 286 367 361 603 309C829 259 1030 244 1280 164V360H0Z" fill="#8b5cf6" opacity=".055"/>
+  <rect width="1280" height="320" rx="22" fill="url(#background)"/>
+  <rect width="1280" height="320" rx="22" fill="url(#grid)"/>
+  <circle cx="1130" cy="38" r="230" fill="#38bdf8" opacity="0.035"/>
+  <circle cx="1180" cy="292" r="260" fill="#818cf8" opacity="0.04"/>
 
-  <rect x="66" y="58" width="352" height="34" rx="17" fill="#0f2740" stroke="#38bdf8" stroke-opacity=".35"/>
-  <circle cx="87" cy="75" r="5" fill="#34d399"/>
-  <text x="103" y="81" fill="#cbd5e1" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="600" letter-spacing="1.8">SUPPORT · AUTOMATION · CLOUD</text>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <rect x="64" y="48" width="334" height="34" rx="17" fill="#10243b" stroke="#38bdf8" stroke-opacity="0.38"/>
+    <circle cx="84" cy="65" r="5" fill="#22c55e"/>
+    <text x="99" y="71" fill="#dbeafe" font-size="14" font-weight="650" letter-spacing="1.4">SUPPORT / AUTOMATION / CLOUD</text>
 
-  <text x="64" y="182" fill="#f8fafc" font-family="Segoe UI, Arial, sans-serif" font-size="66" font-weight="750" letter-spacing="1">MARVIN STENZEL</text>
-  <rect x="66" y="205" width="608" height="5" rx="2.5" fill="url(#accent)"/>
-  <text x="66" y="250" fill="#cbd5e1" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="500" letter-spacing=".7">IT-SUPPORT / AUTOMATISIERUNG / CLOUD-GRUNDLAGEN</text>
-  <text x="66" y="292" fill="#94a3b8" font-family="Segoe UI, Arial, sans-serif" font-size="18">Strukturierte Fehleranalyse · klare Kommunikation · sichere Workflows</text>
-
-  <g transform="translate(1018 178)">
-    <circle r="95" fill="#0f172a" stroke="#818cf8" stroke-opacity=".25" stroke-width="2"/>
-    <circle r="65" fill="none" stroke="#38bdf8" stroke-opacity=".22" stroke-width="2" stroke-dasharray="4 8"/>
-    <circle r="33" fill="#172554" stroke="#a78bfa" stroke-opacity=".65" stroke-width="2"/>
-    <path d="M-68-66L-26-28M67-69L25-28M82 42L31 17M-81 45L-30 18" stroke="url(#accent)" stroke-width="3" stroke-linecap="round" opacity=".75"/>
-    <circle cx="-75" cy="-73" r="10" fill="#38bdf8"/>
-    <circle cx="75" cy="-76" r="10" fill="#818cf8"/>
-    <circle cx="91" cy="47" r="10" fill="#a78bfa"/>
-    <circle cx="-90" cy="50" r="10" fill="#34d399"/>
-    <path d="M-10 0H10M0-10V10" stroke="#f8fafc" stroke-width="4" stroke-linecap="round"/>
+    <text x="62" y="164" fill="#f8fafc" font-size="62" font-weight="750" letter-spacing="0.8">MARVIN STENZEL</text>
+    <rect x="64" y="184" width="585" height="4" rx="2" fill="url(#accent)"/>
+    <text x="64" y="229" fill="#dbeafe" font-size="24" font-weight="550">IT support, AI automation and systems thinking</text>
+    <text x="64" y="267" fill="#94a3b8" font-size="18">Clear communication. Reliable workflows. Tested results.</text>
   </g>
 
-  <text x="1182" y="326" fill="#64748b" font-family="Consolas, monospace" font-size="14" text-anchor="end">mvstnz@github</text>
+  <g transform="translate(770 58)" font-family="Segoe UI, Arial, sans-serif">
+    <path d="M52 102H131M191 102H270M330 102H409" fill="none" stroke="url(#accent)" stroke-width="3" stroke-linecap="round" opacity="0.75"/>
+    <path d="M126 96L137 102L126 108M265 96L276 102L265 108M404 96L415 102L404 108" fill="none" stroke="#7dd3fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <g>
+      <rect x="0" y="70" width="58" height="64" rx="15" fill="#0f2740" stroke="#22c55e" stroke-opacity="0.85"/>
+      <circle cx="29" cy="94" r="8" fill="#22c55e" filter="url(#glow)"/>
+      <text x="29" y="120" text-anchor="middle" fill="#cbd5e1" font-size="10" font-weight="700">INTAKE</text>
+    </g>
+    <g>
+      <rect x="137" y="70" width="58" height="64" rx="15" fill="#0f2740" stroke="#38bdf8" stroke-opacity="0.85"/>
+      <circle cx="166" cy="94" r="8" fill="#38bdf8" filter="url(#glow)"/>
+      <text x="166" y="120" text-anchor="middle" fill="#cbd5e1" font-size="10" font-weight="700">VERIFY</text>
+    </g>
+    <g>
+      <rect x="276" y="70" width="58" height="64" rx="15" fill="#0f2740" stroke="#60a5fa" stroke-opacity="0.85"/>
+      <circle cx="305" cy="94" r="8" fill="#60a5fa" filter="url(#glow)"/>
+      <text x="305" y="120" text-anchor="middle" fill="#cbd5e1" font-size="10" font-weight="700">IMPACT</text>
+    </g>
+    <g>
+      <rect x="415" y="70" width="58" height="64" rx="15" fill="#0f2740" stroke="#818cf8" stroke-opacity="0.9"/>
+      <circle cx="444" cy="94" r="8" fill="#818cf8" filter="url(#glow)"/>
+      <text x="444" y="120" text-anchor="middle" fill="#cbd5e1" font-size="10" font-weight="700">APPROVE</text>
+    </g>
+
+    <text x="237" y="178" text-anchor="middle" fill="#64748b" font-size="13" letter-spacing="1.1">VERIFIED INPUT TO CONTROLLED ACTION</text>
+  </g>
 </svg>

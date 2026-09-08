@@ -1,120 +1,103 @@
 <!-- GitHub profile README for Mvstnz -->
 
 <p align="center">
-  <img src="./assets/profile-header.svg" width="100%" alt="Marvin Stenzel · IT-Support, Automatisierung und Cloud-Grundlagen">
+  <img src="./assets/profile-header.svg" width="100%" alt="Marvin Stenzel — IT support, AI automation and reliable workflows">
 </p>
-
-<h1 align="center">Technik verständlich machen. Probleme strukturiert lösen.</h1>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/marvin-stenzel">
-    <img src="https://img.shields.io/badge/LinkedIn-Vernetzen-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn">
+    <img src="https://img.shields.io/badge/LinkedIn-Profil-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn-Profil">
   </a>
   <a href="mailto:Stenzel_Marvin@outlook.com">
-    <img src="https://img.shields.io/badge/E--Mail-Kontakt-334155?style=flat-square&logo=microsoftoutlook&logoColor=white" alt="E-Mail">
+    <img src="https://img.shields.io/badge/E--Mail-Kontakt-334155?style=flat-square&logo=microsoftoutlook&logoColor=white" alt="E-Mail-Kontakt">
   </a>
   <img src="https://img.shields.io/badge/Offen_für-Remote_IT--Rollen-16A34A?style=flat-square" alt="Offen für Remote-IT-Rollen">
 </p>
 
-Ich verbinde fast 11 Jahre kundenorientierte Berufspraxis, darunter mehrere Jahre Führung von 15 bis 20 Mitarbeitenden, mit einer abgeschlossenen einjährigen Weiterbildung in Linux, Cloud Engineering und IT-Support. Mein Schwerpunkt liegt auf verständlichem Support, systematischer Fehleranalyse und sinnvoller Automatisierung mit KI.
+## Hallo, ich bin Marvin
 
-## Was ich mitbringe
+Ich verbinde fast 11 Jahre kundenorientierte Berufspraxis, darunter mehrere Jahre Führung von 15 bis 20 Mitarbeitenden, mit einer abgeschlossenen Weiterbildung in Linux, Cloud Engineering und IT-Support. Heute entwickle und prüfe ich technische Lösungen mit einem klaren Schwerpunkt auf Support, Automatisierung und verantwortungsvollem KI-Einsatz.
 
-| Support mit Substanz | Automatisierung mit Augenmaß | Solides Cloud-Fundament |
-| --- | --- | --- |
-| Kundenkommunikation, Reklamationen, Eskalationen und Dokumentation aus langjähriger Praxis | KI-Tools und Prompting praktisch eingesetzt, Python- und PowerShell-Grundlagen | Linux, Bash, Git/GitHub, Docker, AWS und GitHub Actions im Kurs- und Projektkontext |
+Dabei geht es mir nicht um möglichst viel Technik, sondern um Lösungen, die nachvollziehbar funktionieren: Anforderungen verstehen, Fehler systematisch eingrenzen, Abläufe sinnvoll strukturieren und Ergebnisse selbst testen.
 
-## Projekte, die zeigen, wie ich arbeite
+> **Mein Arbeitsprinzip:** KI beschleunigt die Umsetzung. Anforderungen, Entscheidungen, Prüfung und Verantwortung bleiben beim Menschen.
 
-### 🚀 Bewerbungs-Workflow · End-to-End-Automatisierung
+## Ausgewählte Projekte
 
-Phasengesteuertes System für die tägliche Suche nach vollständig remote ausgeübten IT-Rollen: Mehrere Stellenquellen fließen in eine beleggestützte Pipeline, die Treffer zusammenführt, Duplikate entfernt, Volltexte prüft, Kandidaten bewertet und den Bearbeitungsstand dauerhaft in einem SQLite-Ledger festhält. Abgebrochene oder teilweise erfolgreiche Läufe bleiben nachvollziehbar und können kontrolliert fortgesetzt werden.
+### [AI Production Incident Control](https://github.com/Mvstnz/ai-production-incident-control)
 
-Aus einem verbindlichen Master-CV und gesperrten Vorlagen entstehen passgenaue HTML- und PDF-Unterlagen, ohne Fähigkeiten hinzuzuerfinden. Harte Quality Gates prüfen unter anderem Remote-Nachweise, UTF-8, PDF-Text, Tracker-Konsistenz und vollständige Laufartefakte, bevor eine Bewerbung als vorbereitet gilt.
+Ein vollständiges Portfolio-System für synthetische Lieferverzögerungen, Maschinenausfälle und Qualitätsprobleme. Zehn n8n-Workflows verbinden FastAPI, PostgreSQL, ein simuliertes ERP und ein React-Dashboard zu einem kontrollierten Incident-Prozess.
 
-![Python](https://img.shields.io/badge/Python-Orchestrierung-3776AB?style=flat-square&logo=python&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-Kandidaten--Ledger-003B57?style=flat-square&logo=sqlite&logoColor=white)
-![Pytest](https://img.shields.io/badge/Pytest-Regressionstests-0A9EDC?style=flat-square&logo=pytest&logoColor=white)
-![Workflow](https://img.shields.io/badge/Workflow-Phasengesteuert-7C3AED?style=flat-square)
-![QA](https://img.shields.io/badge/QA-UTF--8_·_HTML_·_PDF-0F766E?style=flat-square)
+KI kann eingehende Informationen interpretieren und Texte vorbereiten. Fakten, Auswirkungen und Risikowerte werden deterministisch geprüft; folgenreiche Aktionen benötigen eine rollenbasierte Freigabe. Der lokale Gesamtprozess ist mit **108 Unit-Tests**, **34 Integrationstests** und **10 von 10 n8n-Laufzeitszenarien** belegt.
 
-_Privates Praxisprojekt: Architektur und Funktionsumfang sind hier beschrieben; persönliche Bewerbungs- und Trackingdaten bleiben geschützt._
+[![Erfolgreiche Ausführung des n8n-Workflows Normalize, Verify and Correlate](https://raw.githubusercontent.com/Mvstnz/ai-production-incident-control/main/evidence/screenshots/n8n-hero-execution-11.png)](https://github.com/Mvstnz/ai-production-incident-control)
 
-### 🎟️ [Event Planner auf AWS](https://github.com/Mvstnz/praxisphase-event-planner)
+`n8n` · `FastAPI` · `PostgreSQL` · `React/TypeScript` · `Docker Compose` · `Gemini`
 
-Im Team umgesetzte Web-App mit Login, Event-Verwaltung, Ticketmaster-Anbindung, Bildspeicher und Kalenderexport. Die Anwendung läuft containerisiert auf AWS. CI, kontrolliertes Deployment und Teile der Infrastruktur sind als Code abgebildet.
+_Eigenes, KI-gestützt umgesetztes Portfolio-Projekt mit ausschließlich synthetischen Daten. Die lokale Demo ist getestet; eine produktive ERP- oder Cloud-End-to-End-Anbindung wird nicht behauptet._
 
-![FastAPI](https://img.shields.io/badge/FastAPI-REST_API-009688?style=flat-square&logo=fastapi&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Datenbank-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?style=flat-square&logo=docker&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-EC2_·_ALB_·_S3-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
-![Terraform](https://img.shields.io/badge/Terraform-Infrastructure_as_Code-7B42BC?style=flat-square&logo=terraform&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-CI/CD-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+### [Faden Pflegetools](https://faden-pflegetools.de/)
 
-### 💼 [Business Card LinkedIn](https://github.com/Mvstnz/business-card-linkedin)
+Ich habe Faden Pflegetools KI-gestützt mitentwickelt. Mein Beitrag umfasst das Ausarbeiten von Anforderungen und Abläufen, die Prüfung generierten Codes, Funktionstests und die iterative Verbesserung der Anwendung.
 
-Open-Source-Codex-Skill, der Visitenkarten ausliest, Kontakte normalisiert und als vCard, CSV und JSON exportiert. LinkedIn-Treffer werden bewertet. Eine Anfrage wird nur bei eindeutigem Match und nach mehreren Sicherheitsprüfungen versucht.
+Die browserbasierte Lösung unterstützt unter anderem Pflegedokumentation, Dokumenterstellung und eine lokale Whisper-basierte Diktatfunktion. Fachliche Ergebnisse bleiben Entwürfe, die von verantwortlichen Pflegefachkräften geprüft und freigegeben werden.
 
-![Python](https://img.shields.io/badge/Python-Grundlagen-3776AB?style=flat-square&logo=python&logoColor=white)
-![PowerShell](https://img.shields.io/badge/PowerShell-Grundlagen-5391FE?style=flat-square&logo=powershell&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-Zustand_und_Deduplizierung-003B57?style=flat-square&logo=sqlite&logoColor=white)
-![Tests](https://img.shields.io/badge/Tests-Sichere_Mocks-0F766E?style=flat-square&logo=pytest&logoColor=white)
+`Next.js/React` · `Supabase` · `Dokumentgenerierung` · `Whisper/ONNX im Browser`
 
-### ✨ [Skincare Marketing System](https://github.com/Mvstnz/marketing-system)
+## Weitere Projekte
 
-Modulares KI-Assistenzsystem für markenkonforme Inhalte. Ein Brand Kit hält Tonalität und Zielgruppe fest, während geführte Workflows Posts, Newsletter, Produkttexte und Content-Pläne in der passenden Sprache erzeugen.
+| Projekt | Was es zeigt |
+| --- | --- |
+| [IT Application Workflow](https://github.com/Mvstnz/it-application-workflow) | Datenschutzorientierter, wiederaufnehmbarer Workflow für beleggestützte Bewerbungsunterlagen mit Python, SQLite und harten Qualitätsprüfungen |
+| [Event Planner auf AWS](https://github.com/Mvstnz/praxisphase-event-planner) | Teamprojekt mit FastAPI, PostgreSQL, Docker, AWS, Terraform, GitHub Actions und externer Ticketmaster-API |
+| [Business Card LinkedIn](https://github.com/Mvstnz/business-card-linkedin) | Open-Source-Codex-Skill für Visitenkarten, vCard/CSV/JSON-Export, LinkedIn-Matching und kontrollierte Kontaktanfragen |
+| [Skincare Marketing System](https://github.com/Mvstnz/marketing-system) | Geführte KI-Workflows für markenkonforme Posts, Newsletter, Produkttexte und Content-Pläne |
 
-![Codex](https://img.shields.io/badge/Codex-Custom_Skills-111827?style=flat-square&logo=openai&logoColor=white)
-![Prompting](https://img.shields.io/badge/KI--Tools-Prompting-7C3AED?style=flat-square)
-![Workflow](https://img.shields.io/badge/Workflow-Strukturierte_Ausgaben-DB2777?style=flat-square)
+## Wie ich arbeite
+
+- Probleme zuerst reproduzieren und das erwartete Verhalten festhalten
+- Logs, API-Antworten, Statuscodes, Datenbankzustand und einzelne Workflow-Schritte gezielt prüfen
+- Anforderungen und Systemstruktur selbst definieren; KI-Coding-Agenten bewusst für Umsetzung und Debugging einsetzen
+- Änderungen lesen, testen und bei Bedarf durch eine zweite Prüfung absichern
+- Lösungen dokumentieren und in wiederholbare Abläufe überführen
+- Technische Zusammenhänge verständlich erklären und Eskalationen ruhig bearbeiten
 
 ## Technisches Profil
 
-**Im Kurs- und Projektkontext praktisch eingesetzt**
-
-![Linux](https://img.shields.io/badge/Linux-Grundlagen-FCC624?style=flat-square&logo=linux&logoColor=111827)
-![Bash](https://img.shields.io/badge/Bash-Praxis-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
-![Git](https://img.shields.io/badge/Git_&_GitHub-Praxis-F05032?style=flat-square&logo=git&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-Grundlagen-2496ED?style=flat-square&logo=docker&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-Grundlagen-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
-![CI/CD](https://img.shields.io/badge/GitHub_Actions-CI/CD--Grundlagen-2088FF?style=flat-square&logo=githubactions&logoColor=white)
-![AI](https://img.shields.io/badge/KI--Tools_&_Prompting-Praxis-7C3AED?style=flat-square)
-
-**Grundlagen mit Einarbeitung**
-
-![Windows](https://img.shields.io/badge/Windows-Grundlagen-0078D4?style=flat-square&logo=windows11&logoColor=white)
-![PowerShell](https://img.shields.io/badge/PowerShell-Grundlagen-5391FE?style=flat-square&logo=powershell&logoColor=white)
-![Python](https://img.shields.io/badge/Python-Grundlagen-3776AB?style=flat-square&logo=python&logoColor=white)
-![Networks](https://img.shields.io/badge/Netzwerke-Grundlagen-475569?style=flat-square)
-![Monitoring](https://img.shields.io/badge/Monitoring-Grundlagen-475569?style=flat-square)
-![Databases](https://img.shields.io/badge/Datenbanken-Grundlagen-475569?style=flat-square)
+| Bereich | Praxis und Grundlagen |
+| --- | --- |
+| Support & Betrieb | Strukturierte Fehleranalyse, Dokumentation, Kundenkommunikation, Eskalationen, Ticket-/ITIL-Grundlagen |
+| Automatisierung & KI | n8n, Codex, Claude Code, Prompting, geführte Workflows, KI-gestützte Implementierung und Review |
+| Systeme & Cloud | Linux-Grundlagen, Bash, Git/GitHub, Docker-Grundlagen, AWS-Grundlagen, GitHub Actions und CI/CD-Grundlagen |
+| Entwicklung & Daten | Python-Grundlagen, REST-Schnittstellen, relationale Datenbanken sowie PostgreSQL im Projektkontext |
 
 ## Qualifikationen
 
 - Agile Softwareentwicklung mit Fokus auf Linux und Cloud Engineering, Syntax Institut
 - IT-Support-Specialist IHK
+- IT-Administrator IHK
 - Cloud Business Expert IHK
 - Linux Essentials
 - AI Fluency: Framework & Foundations, Anthropic
 
-Aktuell in Vorbereitung: AWS Certified Cloud Practitioner und IT-Administrator IHK.
+Aktuell in Vorbereitung: AWS Certified Cloud Practitioner.
 
-## Stärken, die auch unter Druck tragen
+## Berufliche Substanz
 
-- Führung, Einsatzplanung und Motivation von 15 bis 20 Mitarbeitenden
-- Lösungsorientierte Kommunikation in Reklamationen und Eskalationen
-- Strukturierte Problemlösung, Dokumentation und Qualitätssicherung
-- Schnelle Auffassung, Lernbereitschaft und verlässliche Teamkommunikation
+- Fast 11 Jahre Kundenkommunikation, Reklamationen und lösungsorientierte Eskalationen
+- Mehrjährige Führungserfahrung mit Einsatzplanung und Verantwortung für 15 bis 20 Mitarbeitende
+- Prozesssteuerung, Kennzahlenanalyse, Dokumentation und Qualitätssicherung
+- Belastbarkeit, schnelle Auffassung und verlässliche Teamkommunikation
 
 ## Wofür ich offen bin
 
-Ich suche eine Remote-Einstiegsrolle im **IT-Support**, **Service Desk**, **Application Support** oder in der **Junior-Systemadministration**.
+Ich suche eine vollständig remote ausgeübte Einstiegsrolle im **IT-Support**, **Service Desk**, **Application Support** oder in der **IT-Administration**. Besonders interessant finde ich Aufgaben, bei denen technische Problemlösung, verständliche Kommunikation und sinnvolle Automatisierung zusammenkommen.
 
 Deutsch: Muttersprache · Englisch: B1 bis B2
 
 <p align="center">
   <a href="https://www.linkedin.com/in/marvin-stenzel">
-    <img src="https://img.shields.io/badge/Profil_ansehen-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn-Profil ansehen">
+    <img src="https://img.shields.io/badge/Mehr_zu_mir-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn-Profil ansehen">
   </a>
   <a href="mailto:Stenzel_Marvin@outlook.com">
     <img src="https://img.shields.io/badge/Kontakt-E--Mail-334155?style=for-the-badge&logo=microsoftoutlook&logoColor=white" alt="E-Mail senden">
