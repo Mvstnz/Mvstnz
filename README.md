@@ -34,9 +34,11 @@ Drei alltägliche Fertigungsfälle sind hinterlegt: verspätete Stahlstangen (83
 
 KI kann eingehende Meldungen interpretieren und Texte vorbereiten. Fakten, Auswirkungen und Risikowerte werden deterministisch berechnet und gegen den ERP-Stand geprüft; folgenreiche Aktionen benötigen eine rollenbasierte Freigabe, die genau an Planversion, Hash, Empfänger, Text und Befehlsparameter gebunden ist.
 
-| Gehostetes Dashboard | n8n-Workflow „Normalize, Verify and Correlate“ |
+| Gehostetes Dashboard | Einer von zehn Workflows: WF03 „Normalize, Verify and Correlate“ |
 | --- | --- |
-| [<img src="./assets/apic-dashboard.png" alt="Operations-Übersicht mit drei Produktionsstörungen, Risikobewertung und offenen Freigaben">](https://ai-production-incident-control-dash.vercel.app) | [<img src="./assets/apic-n8n-workflow.jpg" alt="n8n-Workflow WF03: Verzweigung zwischen regelbasierter Extraktion und optionaler Gemini-Anbindung mit anschließender Faktenprüfung">](https://github.com/Mvstnz/ai-production-incident-control) |
+| [<img src="./assets/apic-dashboard.png" alt="Operations-Übersicht mit drei Produktionsstörungen, Risikobewertung und offenen Freigaben">](https://ai-production-incident-control-dash.vercel.app) | [<img src="./assets/apic-n8n-workflow.jpg" alt="n8n-Workflow WF03 von zehn: Verzweigung zwischen regelbasierter Extraktion und optionaler Gemini-Anbindung mit anschließender Faktenprüfung">](https://github.com/Mvstnz/ai-production-incident-control) |
+
+**Die zehn Workflows** decken den Ablauf getrennt voneinander ab: E-Mail-Eingang · API- und Formulareingang · Normalisieren, Prüfen und Korrelieren · ERP-Auswirkungsanalyse · Risikoerklärung und Aktionsplan · Menschliche Freigabe · Aktionsausführung · SLA-Versand und Wiederaufnahme · Fehler- und Dead-Letter-Behandlung · Tägliches Management-Digest. Jeder Schritt ist einzeln nachvollziehbar und einzeln prüfbar.
 
 **Betrieb:** Vercel (Dashboard und API) · Supabase PostgreSQL in Frankfurt mit privaten `ops`- und `erp`-Schemas · n8n Cloud mit allen zehn veröffentlichten Workflows.
 
