@@ -26,15 +26,25 @@ Dabei geht es mir nicht um möglichst viel Technik, sondern um Lösungen, die na
 
 ### [AI Production Incident Control](https://github.com/Mvstnz/ai-production-incident-control)
 
-Ein vollständiges Portfolio-System für synthetische Lieferverzögerungen, Maschinenausfälle und Qualitätsprobleme. Zehn n8n-Workflows verbinden FastAPI, PostgreSQL, ein simuliertes ERP und ein React-Dashboard zu einem kontrollierten Incident-Prozess.
+**[Live-Demo öffnen](https://ai-production-incident-control-dash.vercel.app)** · Besucher können den geteilten Arbeitsbereich ohne Login lesend ansehen.
 
-KI kann eingehende Informationen interpretieren und Texte vorbereiten. Fakten, Auswirkungen und Risikowerte werden deterministisch geprüft; folgenreiche Aktionen benötigen eine rollenbasierte Freigabe. Der lokale Gesamtprozess ist mit **108 Unit-Tests**, **34 Integrationstests** und **10 von 10 n8n-Laufzeitszenarien** belegt.
+Das System führt eine gemeldete Produktionsstörung von der eingehenden Meldung über eine geprüfte Auswirkungsbewertung und eine menschliche Freigabe bis zu einer nachvollziehbaren Aktion im simulierten ERP. Zehn n8n-Workflows verbinden ein React-Dashboard, FastAPI und PostgreSQL zu einem kontrollierten Incident-Prozess. Alle Firmen, Aufträge, Prüfungen und Betriebsdaten sind erfunden.
 
-[![Erfolgreiche Ausführung des n8n-Workflows Normalize, Verify and Correlate](https://raw.githubusercontent.com/Mvstnz/ai-production-incident-control/main/evidence/screenshots/n8n-hero-execution-11.png)](https://github.com/Mvstnz/ai-production-incident-control)
+Drei alltägliche Fertigungsfälle sind hinterlegt: verspätete Stahlstangen (83/100, kritisch), eine ausgefallene Bandsäge (62/100, hoch) und Montageplatten mit zu großen Bohrungen (70/100, kritisch).
 
-`n8n` · `FastAPI` · `PostgreSQL` · `React/TypeScript` · `Docker Compose` · `Gemini`
+KI kann eingehende Meldungen interpretieren und Texte vorbereiten. Fakten, Auswirkungen und Risikowerte werden deterministisch berechnet und gegen den ERP-Stand geprüft; folgenreiche Aktionen benötigen eine rollenbasierte Freigabe, die genau an Planversion, Hash, Empfänger, Text und Befehlsparameter gebunden ist.
 
-_Eigenes, KI-gestützt umgesetztes Portfolio-Projekt mit ausschließlich synthetischen Daten. Die lokale Demo ist getestet; eine produktive ERP- oder Cloud-End-to-End-Anbindung wird nicht behauptet._
+| Gehostetes Dashboard | n8n-Workflow „Normalize, Verify and Correlate“ |
+| --- | --- |
+| [<img src="./assets/apic-dashboard.png" alt="Operations-Übersicht mit drei Produktionsstörungen, Risikobewertung und offenen Freigaben">](https://ai-production-incident-control-dash.vercel.app) | [<img src="./assets/apic-n8n-workflow.jpg" alt="n8n-Workflow WF03: Verzweigung zwischen regelbasierter Extraktion und optionaler Gemini-Anbindung mit anschließender Faktenprüfung">](https://github.com/Mvstnz/ai-production-incident-control) |
+
+**Betrieb:** Vercel (Dashboard und API) · Supabase PostgreSQL in Frankfurt mit privaten `ops`- und `erp`-Schemas · n8n Cloud mit allen zehn veröffentlichten Workflows.
+
+**Nachweise:** 112 Unit-Tests, 34 API-Integrationstests, 10 von 10 lokalen n8n-Laufzeitszenarien, 10 Resilienz-Szenarien, 50 deterministische Auswertungsfälle sowie protokollierte Läufe gegen die gehostete Umgebung inklusive eines echten Gemini-Durchlaufs.
+
+`n8n` · `FastAPI` · `PostgreSQL/Supabase` · `React/TypeScript` · `Docker Compose` · `Vercel` · `Gemini`
+
+_Eigenes, KI-gestützt umgesetztes Portfolio-Projekt mit ausschließlich synthetischen Daten. Lieferanten-Mails werden in der Datenbank erfasst und nicht an reale Empfänger versendet; Umplanungen und Sperren wirken nur im simulierten ERP. Der ausgewiesene Auftragswert bezeichnet betroffenes Volumen, keine Verlustprognose. Die verbundene n8n-Instanz läuft in einem Trial-Konto, davon hängt die dauerhafte Erreichbarkeit ab._
 
 ### [Faden Pflegetools](https://faden-pflegetools.de/)
 
