@@ -46,8 +46,7 @@ KI kann eingehende Meldungen interpretieren und Texte vorbereiten. Fakten, Auswi
 
 `n8n` · `FastAPI` · `PostgreSQL/Supabase` · `React/TypeScript` · `Docker Compose` · `Vercel` · `Gemini`
 
-_Eigenes, KI-gestützt umgesetztes Portfolio-Projekt mit ausschließlich synthetischen Daten. Lieferanten-Mails werden in der Datenbank erfasst und nicht an reale Empfänger versendet; Umplanungen und Sperren wirken nur im simulierten ERP. Der ausgewiesene Auftragswert bezeichnet betroffenes Volumen, keine Verlustprognose. Die verbundene n8n-Instanz läuft in einem Trial-Konto, davon hängt die dauerhafte Erreichbarkeit ab._
-
+_Eigenes, KI-gestützt umgesetztes Portfolio-Projekt mit ausschließlich synthetischen Daten. Lieferanten-Mails werden in der Datenbank erfasst und nicht an reale Empfänger versendet; Umplanungen und Sperren wirken nur im simulierten ERP. Der ausgewiesene Auftragswert bezeichnet betroffenes Volumen, keine Verlustprognose. 
 ### [Faden Pflegetools](https://faden-pflegetools.de/)
 
 Ich habe Faden Pflegetools KI-gestützt mitentwickelt. Mein Beitrag umfasst das Ausarbeiten von Anforderungen und Abläufen, die Prüfung generierten Codes, Funktionstests und die iterative Verbesserung der Anwendung.
