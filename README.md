@@ -24,6 +24,18 @@ Dabei geht es mir nicht um möglichst viel Technik, sondern um Lösungen, die na
 
 ## Ausgewählte Projekte
 
+### [JEV B2B Lead Qualification](https://github.com/Mvstnz/jev-n8n-b2b-lead-qualification)
+
+An English-language portfolio demo that connects n8n, JEV through Vercel AI Gateway, Google Sheets and Slack. The workflow validates synthetic enquiries, checks for duplicates, evaluates the current paid phase, applies explicit business gates and records the resulting next action. Five live JEV intake runs reached Sheets; four routes matched the authored expectations. A separate, approved MOCK showcase delivered six clearly labelled messages to a private Slack demo channel. Provider limits prevented a complete live evaluation, and the workflow remains inactive pending operational hardening.
+
+[![Real n8n lead qualification workflow](https://raw.githubusercontent.com/Mvstnz/jev-n8n-b2b-lead-qualification/main/assets/screenshots/workflow.png)](https://github.com/Mvstnz/jev-n8n-b2b-lead-qualification)
+
+| Live JEV results in Google Sheets | Separate MOCK notifications in Slack |
+| --- | --- |
+| [![Five synthetic live JEV lead rows](https://raw.githubusercontent.com/Mvstnz/jev-n8n-b2b-lead-qualification/main/assets/screenshots/sheets-leads.png)](https://github.com/Mvstnz/jev-n8n-b2b-lead-qualification) | [![Approved synthetic MOCK notifications](https://raw.githubusercontent.com/Mvstnz/jev-n8n-b2b-lead-qualification/main/assets/screenshots/slack-mock-demo.png)](https://github.com/Mvstnz/jev-n8n-b2b-lead-qualification) |
+
+`n8n` · `JEV` · `Vercel AI Gateway` · `Google Sheets` · `Slack` · `Python`
+
 ### [AI Production Incident Control](https://github.com/Mvstnz/ai-production-incident-control)
 
 **[Live-Demo öffnen](https://ai-production-incident-control-dash.vercel.app)** · Besucher können den geteilten Arbeitsbereich ohne Login lesend ansehen.
