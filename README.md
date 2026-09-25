@@ -28,11 +28,11 @@ Dabei geht es mir nicht um möglichst viel Technik, sondern um Lösungen, die na
 
 Ein Portfolio-Projekt zur B2B-Anfragenqualifizierung mit n8n, JEV über Vercel AI Gateway, Google Sheets und Slack. JEV versteht, **welche Arbeit jetzt konkret angefragt wird**; feste Regeln entscheiden danach zwischen Vertrieb, menschlicher Prüfung und Support. Fünf erfundene Anfragen wurden mit JEV verarbeitet und in Sheets gespeichert; vier Routen entsprachen den vorab festgelegten Erwartungen. Ein separat freigegebener n8n-Sender verschickte fünf verständliche Fallmeldungen und eine Zusammenfassung an einen privaten Slack-Demokanal. Beim 6.000-Euro-Pilot empfahlen die Regeln ein Vertriebsgespräch; der 120.000-Euro-Rollout blieb wegen unklarem Umfang ohne Score zur Prüfung. Das ist keine Abschlussprognose. Anbieterlimits begrenzten die größere Auswertung; die Workflows sind weiterhin inaktiv.
 
-[![Echter n8n-Workflow zur Qualifizierung von B2B-Anfragen](https://raw.githubusercontent.com/Mvstnz/jev-n8n-b2b-lead-qualification/main/assets/linkedin/01-workflow-overview.png)](https://github.com/Mvstnz/jev-n8n-b2b-lead-qualification)
+[![B2B-Geschäftsfall mit echtem n8n-Workflow und roten Erklärpfeilen](https://raw.githubusercontent.com/Mvstnz/jev-n8n-b2b-lead-qualification/main/assets/linkedin-v2/01-business-contrast.png)](https://github.com/Mvstnz/jev-n8n-b2b-lead-qualification)
 
 | Wo JEV die Anfrage auswertet | Verständliche Slack-Meldung aus einem gespeicherten JEV-Ergebnis |
 | --- | --- |
-| [![JEV im n8n-Auswertungskern über Vercel AI Gateway](https://raw.githubusercontent.com/Mvstnz/jev-n8n-b2b-lead-qualification/main/assets/linkedin/02-jev-and-rules.png)](https://github.com/Mvstnz/jev-n8n-b2b-lead-qualification) | [![Erfundener Pilot mit begründeter Priorität im privaten Slack-Demokanal](https://raw.githubusercontent.com/Mvstnz/jev-n8n-b2b-lead-qualification/main/assets/linkedin/05-slack-sales-cases.png)](https://github.com/Mvstnz/jev-n8n-b2b-lead-qualification) |
+| [![JEV im n8n-Auswertungskern über Vercel AI Gateway](https://raw.githubusercontent.com/Mvstnz/jev-n8n-b2b-lead-qualification/main/assets/linkedin-v2/03-jev-and-policy.png)](https://github.com/Mvstnz/jev-n8n-b2b-lead-qualification) | [![Erfundener Pilot mit begründeter Priorität im privaten Slack-Demokanal](https://raw.githubusercontent.com/Mvstnz/jev-n8n-b2b-lead-qualification/main/assets/linkedin-v2/06-slack-sales-message.png)](https://github.com/Mvstnz/jev-n8n-b2b-lead-qualification) |
 
 `n8n` · `JEV` · `Vercel AI Gateway` · `Google Sheets` · `Slack` · `Python`
 
