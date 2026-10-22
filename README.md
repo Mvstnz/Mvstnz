@@ -24,6 +24,36 @@ Dabei geht es mir nicht um möglichst viel Technik, sondern um Lösungen, die na
 
 ## Ausgewählte Projekte
 
+### [AI Incident Control](https://mvstnz.github.io/ai-incident-control-demo/)
+
+**[Live-Demo öffnen](https://mvstnz.github.io/ai-incident-control-demo/)** · ohne Login, alle Daten erfunden · ohne n8n-Verbindung: [Offline-Demo](https://mvstnz.github.io/ai-incident-control-demo/?offline=1)
+
+Ein Leitstand für Produktionsstörungen und ein Störungsassistent für Maschinenbediener in einem Dashboard, orchestriert von **elf n8n-Workflows**. Eine Lieferanten-Mail, eine Störmeldung der Instandhaltung oder eine Kundenreklamation wird in wenigen Sekunden zu einer geprüften Entscheidungsvorlage:
+
+- **KI liest:** Gemini 2.5 Flash-Lite macht aus dem Freitext feste Felder, jede Angabe mit wörtlichem Zitat.
+- **Code prüft und rechnet:** Zitate, Mengen und Termine werden gegen den Originaltext geprüft. Betroffene Aufträge, Priorität (0 bis 100 Punkte nach festen Regeln, keine Wahrscheinlichkeit) und Handlungsoptionen mit Kosten werden gegen einen fiktiven ERP-Stand berechnet.
+- **Mensch entscheidet:** Freigegeben wird genau ein Planstand mit passender Rolle. Neue Fakten erzeugen eine Revision, alte Freigaben verfallen.
+- **n8n orchestriert:** Speichern, Protokoll und Slack-Alarm bei kritischen Fällen.
+
+Sechs Demo-Fälle einer erfundenen Fabrik zeigen den Ablauf: verspätete Kugellager (kritisch, 91 Punkte, drei Kundenaufträge betroffen), eine Folge-Mail als Revision, ein Maschinenstillstand über ein n8n-Formular, eine Kundenreklamation mit Rückverfolgung der Charge, eine unvollständige Meldung (manuelle Prüfung statt erfundener Zahlen) und ein Manipulationsversuch per Mail (abgewiesen).
+
+Der **Störungsassistent** beantwortet Fragen von Bedienern in sechs Sprachen nur aus belegten Quellen (Fehlercode-Katalog, Handbuch, Erfahrungswissen, Suche nach ähnlichem Inhalt). Fragen nach dem Umgehen von Schutzeinrichtungen beantwortet er nie, Unbekanntes eskaliert er an die Instandhaltung. Deren Lösung fließt in die Wissensbasis zurück, und dieselbe Frage wird danach beantwortet.
+
+[<img src="./assets/aic-lagebild.jpg" alt="Lagebild des Leitstands mit Kennzahlen und Fällen nach Priorität">](https://mvstnz.github.io/ai-incident-control-demo/)
+
+| Live-Pipeline mit echten Laufzeiten aus n8n | Auswirkung: Bedarf und Verfügbarkeit über die Zeit |
+| --- | --- |
+| [<img src="./assets/aic-pipeline.jpg" alt="Analyse-Pipeline mit KI-, Code- und n8n-Schritten und gemessenen Laufzeiten">](https://mvstnz.github.io/ai-incident-control-demo/) | [<img src="./assets/aic-auswirkung.jpg" alt="Fallansicht mit Fehlmenge, betroffenen Kundenaufträgen und Zeitachse">](https://mvstnz.github.io/ai-incident-control-demo/) |
+| **Störungsassistent: Antwort auf Polnisch mit Fundstellen** | **Einer von elf Workflows: die Analyse-Pipeline in n8n** |
+| [<img src="./assets/aic-assistent.jpg" alt="Antwortkarte des Störungsassistenten auf Polnisch, Sicherheit zuerst, jeder Schritt mit Quelle">](https://mvstnz.github.io/ai-incident-control-demo/#/assistent) | [<img src="./assets/aic-n8n.jpg" alt="n8n-Workflow Analyse-Pipeline: KI liest, Code prüft und rechnet, Speichern und Alarm">](https://mvstnz.github.io/ai-incident-control-demo/#/so-funktionierts) |
+
+**Nachweise:** 122 lokale Tests (Rechenkern, Störungsassistent, Dashboard) und eine Live-Abnahme aller Fälle über die öffentliche Seite gegen n8n. Eine Analyse mit zwei KI-Aufrufen dauert 3 bis 6 Sekunden.
+
+`n8n` · `Gemini 2.5 Flash-Lite` · `OpenAI-Embeddings` · `n8n Data Tables` · `Slack` · `React/TypeScript/Vite` · `GitHub Pages`
+
+_Eigenes, KI-gestützt umgesetztes Portfolio-Projekt mit ausschließlich erfundenen Daten. Lieferanten-Mails und ERP-Änderungen werden nur simuliert; der ausgewiesene Auftragswert ist betroffenes Volumen, keine Verlustprognose. Die Demo-Webhooks sind öffentlich und durch erlaubte Herkunft, Eingabeprüfung und eine Kostenbremse geschützt; produktiv käme eine Anmeldung davor._
+
+
 ### [JEV B2B Lead Qualification](https://github.com/Mvstnz/jev-n8n-b2b-lead-qualification)
 
 Ein Portfolio-Projekt zur B2B-Anfragenqualifizierung mit n8n, JEV über Vercel AI Gateway, Google Sheets und Slack. JEV versteht, **welche Arbeit jetzt konkret angefragt wird**; feste Regeln entscheiden danach zwischen Vertrieb, menschlicher Prüfung und Support. Fünf erfundene Anfragen wurden mit JEV verarbeitet und in Sheets gespeichert; vier Routen entsprachen den vorab festgelegten Erwartungen. Ein separat freigegebener n8n-Sender verschickte fünf verständliche Fallmeldungen und eine Zusammenfassung an einen privaten Slack-Demokanal. Beim 6.000-Euro-Pilot empfahlen die Regeln ein Vertriebsgespräch; der 120.000-Euro-Rollout blieb wegen unklarem Umfang ohne Score zur Prüfung. Das ist keine Abschlussprognose. Anbieterlimits begrenzten die größere Auswertung; die Workflows sind weiterhin inaktiv.
@@ -36,29 +66,6 @@ Ein Portfolio-Projekt zur B2B-Anfragenqualifizierung mit n8n, JEV über Vercel A
 
 `n8n` · `JEV` · `Vercel AI Gateway` · `Google Sheets` · `Slack` · `Python`
 
-### [AI Production Incident Control](https://github.com/Mvstnz/ai-production-incident-control)
-
-**[Live-Demo öffnen](https://ai-production-incident-control-dash.vercel.app)** · Besucher können den geteilten Arbeitsbereich ohne Login lesend ansehen.
-
-Das System führt eine gemeldete Produktionsstörung von der eingehenden Meldung über eine geprüfte Auswirkungsbewertung und eine menschliche Freigabe bis zu einer nachvollziehbaren Aktion im simulierten ERP. Zehn n8n-Workflows verbinden ein React-Dashboard, FastAPI und PostgreSQL zu einem kontrollierten Incident-Prozess. Alle Firmen, Aufträge, Prüfungen und Betriebsdaten sind erfunden.
-
-Drei alltägliche Fertigungsfälle sind hinterlegt: verspätete Stahlstangen (83/100, kritisch), eine ausgefallene Bandsäge (62/100, hoch) und Montageplatten mit zu großen Bohrungen (70/100, kritisch).
-
-KI kann eingehende Meldungen interpretieren und Texte vorbereiten. Fakten, Auswirkungen und Risikowerte werden deterministisch berechnet und gegen den ERP-Stand geprüft; folgenreiche Aktionen benötigen eine rollenbasierte Freigabe, die genau an Planversion, Hash, Empfänger, Text und Befehlsparameter gebunden ist.
-
-| Gehostetes Dashboard | Einer von zehn Workflows: WF03 „Normalize, Verify and Correlate“ |
-| --- | --- |
-| [<img src="./assets/apic-dashboard.png" alt="Operations-Übersicht mit drei Produktionsstörungen, Risikobewertung und offenen Freigaben">](https://ai-production-incident-control-dash.vercel.app) | [<img src="./assets/apic-n8n-workflow.jpg" alt="n8n-Workflow WF03 von zehn: Verzweigung zwischen regelbasierter Extraktion und optionaler Gemini-Anbindung mit anschließender Faktenprüfung">](https://github.com/Mvstnz/ai-production-incident-control) |
-
-**Die zehn Workflows** decken den Ablauf getrennt voneinander ab: E-Mail-Eingang · API- und Formulareingang · Normalisieren, Prüfen und Korrelieren · ERP-Auswirkungsanalyse · Risikoerklärung und Aktionsplan · Menschliche Freigabe · Aktionsausführung · SLA-Versand und Wiederaufnahme · Fehler- und Dead-Letter-Behandlung · Tägliches Management-Digest. Jeder Schritt ist einzeln nachvollziehbar und einzeln prüfbar.
-
-**Betrieb:** Vercel (Dashboard und API) · Supabase PostgreSQL in Frankfurt mit privaten `ops`- und `erp`-Schemas · n8n Cloud mit allen zehn veröffentlichten Workflows.
-
-**Nachweise:** 112 Unit-Tests, 34 API-Integrationstests, 10 von 10 lokalen n8n-Laufzeitszenarien, 10 Resilienz-Szenarien, 50 deterministische Auswertungsfälle sowie protokollierte Läufe gegen die gehostete Umgebung inklusive eines echten Gemini-Durchlaufs.
-
-`n8n` · `FastAPI` · `PostgreSQL/Supabase` · `React/TypeScript` · `Docker Compose` · `Vercel` · `Gemini`
-
-_Eigenes, KI-gestützt umgesetztes Portfolio-Projekt mit ausschließlich synthetischen Daten. Lieferanten-Mails werden in der Datenbank erfasst und nicht an reale Empfänger versendet; Umplanungen und Sperren wirken nur im simulierten ERP. Der ausgewiesene Auftragswert bezeichnet betroffenes Volumen, keine Verlustprognose. 
 ### [Faden Pflegetools](https://faden-pflegetools.de/)
 
 Ich habe Faden Pflegetools KI-gestützt mitentwickelt. Mein Beitrag umfasst das Ausarbeiten von Anforderungen und Abläufen, die Prüfung generierten Codes, Funktionstests und die iterative Verbesserung der Anwendung.
