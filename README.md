@@ -32,7 +32,7 @@ Ein Leitstand für Produktionsstörungen und ein Störungsassistent für Maschin
 
 - **KI liest:** Gemini 2.5 Flash-Lite macht aus dem Freitext feste Felder, jede Angabe mit wörtlichem Zitat.
 - **Code prüft und rechnet:** Zitate, Mengen und Termine werden gegen den Originaltext geprüft. Betroffene Aufträge, Priorität (0 bis 100 Punkte nach festen Regeln, keine Wahrscheinlichkeit) und Handlungsoptionen mit Kosten werden gegen einen fiktiven ERP-Stand berechnet.
-- **Mensch entscheidet:** Freigegeben wird genau ein Planstand mit passender Rolle. Neue Fakten erzeugen eine Revision, alte Freigaben verfallen.
+- **Mensch entscheidet:** Freigegeben wird genau ein Planstand mit passender Rolle. Neue Fakten erzeugen eine Revision, noch offene Freigaben des alten Plans verfallen.
 - **n8n orchestriert:** Speichern, Protokoll und Slack-Alarm bei kritischen Fällen.
 
 Sechs Demo-Fälle einer erfundenen Fabrik zeigen den Ablauf: verspätete Kugellager (kritisch, 91 Punkte, drei Kundenaufträge betroffen), eine Folge-Mail als Revision, ein Maschinenstillstand über ein n8n-Formular, eine Kundenreklamation mit Rückverfolgung der Charge, eine unvollständige Meldung (manuelle Prüfung statt erfundener Zahlen) und ein Manipulationsversuch per Mail (abgewiesen).
@@ -47,7 +47,7 @@ Der **Störungsassistent** beantwortet Fragen von Bedienern in sechs Sprachen nu
 | **Störungsassistent: Antwort auf Polnisch mit Fundstellen** | **Einer von elf Workflows: die Analyse-Pipeline in n8n** |
 | [<img src="./assets/aic-assistent.jpg" alt="Antwortkarte des Störungsassistenten auf Polnisch, Sicherheit zuerst, jeder Schritt mit Quelle">](https://mvstnz.github.io/ai-incident-control-demo/#/assistent) | [<img src="./assets/aic-n8n.jpg" alt="n8n-Workflow Analyse-Pipeline: KI liest, Code prüft und rechnet, Speichern und Alarm">](https://mvstnz.github.io/ai-incident-control-demo/#/so-funktionierts) |
 
-**Nachweise:** 122 lokale Tests (Rechenkern, Störungsassistent, Dashboard) und eine Live-Abnahme aller Fälle über die öffentliche Seite gegen n8n. Eine Analyse mit zwei KI-Aufrufen dauert 3 bis 6 Sekunden.
+**Nachweise:** 137 lokale Tests (Rechenkern, Störungsassistent, Dashboard) und drei Live-Abnahme-Läufe über die öffentliche Seite gegen n8n. Eine Analyse mit zwei KI-Aufrufen dauert 3 bis 6 Sekunden.
 
 `n8n` · `Gemini 2.5 Flash-Lite` · `OpenAI-Embeddings` · `n8n Data Tables` · `Slack` · `React/TypeScript/Vite` · `GitHub Pages`
 
