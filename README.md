@@ -47,7 +47,7 @@ Der **Störungsassistent** beantwortet Fragen von Bedienern in sechs Sprachen nu
 | **Störungsassistent: Antwort auf Polnisch mit Fundstellen** | **Einer von elf Workflows: die Analyse-Pipeline in n8n** |
 | [<img src="./assets/aic-assistent.jpg" alt="Antwortkarte des Störungsassistenten auf Polnisch, Sicherheit zuerst, jeder Schritt mit Quelle">](https://mvstnz.github.io/ai-incident-control-demo/#/assistent) | [<img src="./assets/aic-n8n.jpg" alt="n8n-Workflow Analyse-Pipeline: KI liest, Code prüft und rechnet, Speichern und Alarm">](https://mvstnz.github.io/ai-incident-control-demo/#/so-funktionierts) |
 
-**Nachweise:** 137 lokale Tests (Rechenkern, Störungsassistent, Dashboard) und drei Live-Abnahme-Läufe über die öffentliche Seite gegen n8n. Eine Analyse mit zwei KI-Aufrufen dauert 3 bis 6 Sekunden.
+**Nachweise:** 138 lokale Tests (Rechenkern, Störungsassistent, Dashboard) und drei Live-Abnahme-Läufe über die öffentliche Seite gegen n8n. Eine Analyse mit zwei KI-Aufrufen dauert 3 bis 6 Sekunden.
 
 `n8n` · `Gemini 2.5 Flash-Lite` · `OpenAI-Embeddings` · `n8n Data Tables` · `Slack` · `React/TypeScript/Vite` · `GitHub Pages`
 
