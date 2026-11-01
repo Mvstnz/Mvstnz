@@ -47,7 +47,7 @@ Der **Störungsassistent** beantwortet Fragen von Bedienern in sechs Sprachen nu
 | **Störungsassistent: Antwort auf Polnisch mit Fundstellen** | **Einer von elf Workflows: die Analyse-Pipeline in n8n** |
 | [<img src="./assets/aic-assistent.jpg" alt="Antwortkarte des Störungsassistenten auf Polnisch, Sicherheit zuerst, jeder Schritt mit Quelle">](https://mvstnz.github.io/ai-incident-control-demo/#/assistent) | [<img src="./assets/aic-n8n.jpg" alt="n8n-Workflow Analyse-Pipeline: Claude Haiku 5.5 liest, Code prüft und rechnet, KI formuliert den Entwurf">](https://mvstnz.github.io/ai-incident-control-demo/#/so-funktionierts) |
 
-**Nachweise:** 252 lokale Tests (Rechenkern, Störungsassistent, Dashboard), fünf Live-Abnahmen über die öffentliche Seite gegen n8n und ein Modellvergleich (Claude und Gemini mit denselben Aufgaben). Eine Analyse mit zwei KI-Aufrufen dauert gemessen rund 6 bis 8 Sekunden und kostet rund 0,1 US-Cent KI. Bilder aus der Offline-Demo (gleicher Rechenkern, aufgezeichnete KI-Antworten), das n8n-Bild aus dem Live-Betrieb.
+**Nachweise:** 258 lokale Tests (Rechenkern, Störungsassistent, Dashboard), fünf Live-Abnahmen über die öffentliche Seite gegen n8n und ein Modellvergleich (Claude und Gemini mit denselben Aufgaben). Eine Analyse mit zwei KI-Aufrufen dauert gemessen rund 6 bis 8 Sekunden und kostet rund 0,1 US-Cent KI. Bilder aus der Offline-Demo (gleicher Rechenkern, aufgezeichnete KI-Antworten), das n8n-Bild aus dem Live-Betrieb.
 
 `n8n` · `Claude Haiku 5.5` · `Gemini 2.5 Flash-Lite` · `OpenAI-Embeddings` · `n8n Data Tables` · `Slack` · `React/TypeScript/Vite` · `GitHub Pages`
 
