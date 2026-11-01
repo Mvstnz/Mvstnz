@@ -30,26 +30,26 @@ Dabei geht es mir nicht um möglichst viel Technik, sondern um Lösungen, die na
 
 Ein Leitstand für Produktionsstörungen und ein Störungsassistent für Maschinenbediener in einem Dashboard, orchestriert von **elf n8n-Workflows**. Eine Lieferanten-Mail, eine Störmeldung der Instandhaltung oder eine Kundenreklamation wird in wenigen Sekunden zu einer geprüften Entscheidungsvorlage:
 
-- **KI liest:** Gemini 2.5 Flash-Lite macht aus dem Freitext feste Felder, jede Angabe mit wörtlichem Zitat.
+- **KI liest:** Claude Haiku 5.5 macht aus dem Freitext feste Felder, jede Angabe mit wörtlichem Zitat.
 - **Code prüft und rechnet:** Zitate, Mengen und Termine werden gegen den Originaltext geprüft. Betroffene Aufträge, Priorität (0 bis 100 Punkte nach festen Regeln, keine Wahrscheinlichkeit) und Handlungsoptionen mit Kosten werden gegen einen fiktiven ERP-Stand berechnet.
 - **Mensch entscheidet:** Freigegeben wird genau ein Planstand mit passender Rolle. Neue Fakten erzeugen eine Revision, noch offene Freigaben des alten Plans verfallen.
 - **n8n orchestriert:** Speichern, Protokoll und Slack-Alarm bei kritischen Fällen.
 
 Sechs Demo-Fälle einer erfundenen Fabrik zeigen den Ablauf: verspätete Kugellager (kritisch, 91 Punkte, drei Kundenaufträge betroffen), eine Folge-Mail als Revision, ein Maschinenstillstand über ein n8n-Formular, eine Kundenreklamation mit Rückverfolgung der Charge, eine unvollständige Meldung (manuelle Prüfung statt erfundener Zahlen) und ein Manipulationsversuch per Mail (abgewiesen).
 
-Der **Störungsassistent** beantwortet Fragen von Bedienern in sechs Sprachen nur aus belegten Quellen (Fehlercode-Katalog, Handbuch, Erfahrungswissen, Suche nach ähnlichem Inhalt). Fragen nach dem Umgehen von Schutzeinrichtungen beantwortet er nie, Unbekanntes eskaliert er an die Instandhaltung. Deren Lösung fließt in die Wissensbasis zurück, und dieselbe Frage wird danach beantwortet.
+Der **Störungsassistent** beantwortet Fragen von Bedienern in sechs Sprachen nur aus belegten Quellen (Fehlercode-Katalog, Handbuch, Erfahrungswissen, Suche nach ähnlichem Inhalt). Fragen nach dem Umgehen von Schutzeinrichtungen beantwortet er nie, Unbekanntes eskaliert er an die Instandhaltung. Deren Lösung fließt in die Wissensbasis zurück, und dieselbe Frage wird danach beantwortet. Steht dabei die Maschine, legt n8n daraus automatisch einen Vorfall im Leitstand an – Assistent und Leitstand sind ein System.
 
 [<img src="./assets/aic-lagebild.jpg" alt="Lagebild des Leitstands mit Kennzahlen und Fällen nach Priorität">](https://mvstnz.github.io/ai-incident-control-demo/)
 
-| Live-Pipeline mit echten Laufzeiten aus n8n | Auswirkung: Bedarf und Verfügbarkeit über die Zeit |
+| Ergebnis und Analyse-Pipeline als Zeitleiste | Auswirkung: Bedarf und Verfügbarkeit über die Zeit |
 | --- | --- |
-| [<img src="./assets/aic-pipeline.jpg" alt="Analyse-Pipeline mit KI-, Code- und n8n-Schritten und gemessenen Laufzeiten">](https://mvstnz.github.io/ai-incident-control-demo/) | [<img src="./assets/aic-auswirkung.jpg" alt="Fallansicht mit Fehlmenge, betroffenen Kundenaufträgen und Zeitachse">](https://mvstnz.github.io/ai-incident-control-demo/) |
+| [<img src="./assets/aic-pipeline.jpg" alt="Analyse-Fenster: Ergebnis mit Fehlmenge und Priorität, darunter die Pipeline mit KI-, Code- und n8n-Schritten als Zeitleiste">](https://mvstnz.github.io/ai-incident-control-demo/) | [<img src="./assets/aic-auswirkung.jpg" alt="Fallansicht mit Fehlmenge, betroffenen Kundenaufträgen und Zeitachse">](https://mvstnz.github.io/ai-incident-control-demo/) |
 | **Störungsassistent: Antwort auf Polnisch mit Fundstellen** | **Einer von elf Workflows: die Analyse-Pipeline in n8n** |
-| [<img src="./assets/aic-assistent.jpg" alt="Antwortkarte des Störungsassistenten auf Polnisch, Sicherheit zuerst, jeder Schritt mit Quelle">](https://mvstnz.github.io/ai-incident-control-demo/#/assistent) | [<img src="./assets/aic-n8n.jpg" alt="n8n-Workflow Analyse-Pipeline: KI liest, Code prüft und rechnet, Speichern und Alarm">](https://mvstnz.github.io/ai-incident-control-demo/#/so-funktionierts) |
+| [<img src="./assets/aic-assistent.jpg" alt="Antwortkarte des Störungsassistenten auf Polnisch, Sicherheit zuerst, jeder Schritt mit Quelle">](https://mvstnz.github.io/ai-incident-control-demo/#/assistent) | [<img src="./assets/aic-n8n.jpg" alt="n8n-Workflow Analyse-Pipeline: Claude Haiku 5.5 liest, Code prüft und rechnet, KI formuliert den Entwurf">](https://mvstnz.github.io/ai-incident-control-demo/#/so-funktionierts) |
 
-**Nachweise:** 151 lokale Tests (Rechenkern, Störungsassistent, Dashboard) und drei Live-Abnahme-Läufe über die öffentliche Seite gegen n8n. Eine Analyse mit zwei KI-Aufrufen dauert 3 bis 6 Sekunden.
+**Nachweise:** 252 lokale Tests (Rechenkern, Störungsassistent, Dashboard), fünf Live-Abnahmen über die öffentliche Seite gegen n8n und ein Modellvergleich (Claude und Gemini mit denselben Aufgaben). Eine Analyse mit zwei KI-Aufrufen dauert gemessen rund 6 bis 8 Sekunden und kostet rund 0,1 US-Cent KI. Bilder aus der Offline-Demo (gleicher Rechenkern, aufgezeichnete KI-Antworten), das n8n-Bild aus dem Live-Betrieb.
 
-`n8n` · `Gemini 2.5 Flash-Lite` · `OpenAI-Embeddings` · `n8n Data Tables` · `Slack` · `React/TypeScript/Vite` · `GitHub Pages`
+`n8n` · `Claude Haiku 5.5` · `Gemini 2.5 Flash-Lite` · `OpenAI-Embeddings` · `n8n Data Tables` · `Slack` · `React/TypeScript/Vite` · `GitHub Pages`
 
 _Eigenes, KI-gestützt umgesetztes Portfolio-Projekt mit ausschließlich erfundenen Daten. Lieferanten-Mails und ERP-Änderungen werden nur simuliert; der ausgewiesene Auftragswert ist betroffenes Volumen, keine Verlustprognose. Die Demo-Webhooks sind öffentlich und durch erlaubte Herkunft, Eingabeprüfung und eine Kostenbremse geschützt; produktiv käme eine Anmeldung davor._
 
