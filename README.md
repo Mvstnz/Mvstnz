@@ -28,7 +28,7 @@ Dabei geht es mir nicht um möglichst viel Technik, sondern um Lösungen, die na
 
 **[Video ansehen (50 s, LinkedIn)](https://www.linkedin.com/feed/update/urn:li:activity:7528394520821084160/)** · **im Betrieb im Einsatz** · gezeigt mit erfundenen Daten
 
-Marelle ist kein Demo-Projekt: Die Suite läuft produktiv in einem Fertigungsbetrieb. Ein Bildschirm steht in der Produktionshalle, einer im Besprechungsraum der Geschäftsleitung, und jeder PC dazwischen zeigt dieselben Zahlen. Dafür habe ich mit Marelle eine komplette Dashboard-Suite entwickelt und im Betrieb eingeführt, ohne Webserver und ohne Datenbank:
+Marelle ist kein Demo-Projekt: Die Suite läuft produktiv in einem Fertigungsbetrieb. Ein Bildschirm steht in der Produktionshalle, einer im Besprechungsraum der Geschäftsleitung, und jeder PC dazwischen zeigt dieselben Zahlen. Dafür habe ich mit Marelle eine komplette Dashboard-Suite entwickelt, ohne Webserver und ohne Datenbank:
 
 - **Buchen:** Bediener buchen an den Terminals in der Halle direkt im ERP.
 - **Abholen:** Ein Export-PC holt die ERP-Daten stündlich per Browser-Automatisierung in Python ab, KPI-Berichte zweimal am Tag.
