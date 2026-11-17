@@ -26,9 +26,9 @@ Dabei geht es mir nicht um möglichst viel Technik, sondern um Lösungen, die na
 
 ### [Marelle Plant Suite](https://www.linkedin.com/feed/update/urn:li:activity:7528394520821084160/)
 
-**[Video ansehen (50 s, LinkedIn)](https://www.linkedin.com/feed/update/urn:li:activity:7528394520821084160/)** · keine öffentliche Demo, alle Daten erfunden
+**[Video ansehen (50 s, LinkedIn)](https://www.linkedin.com/feed/update/urn:li:activity:7528394520821084160/)** · **im Betrieb im Einsatz** · gezeigt mit erfundenen Daten
 
-Im Werk eines Pumpenherstellers steht ein Bildschirm in der Produktionshalle, einer im Besprechungsraum der Geschäftsleitung, und jeder PC dazwischen soll dieselben Zahlen zeigen. Dafür habe ich mit Marelle eine komplette Dashboard-Suite entwickelt, ohne Webserver und ohne Datenbank:
+Marelle ist kein Demo-Projekt: Die Suite läuft produktiv in einem Fertigungsbetrieb. Ein Bildschirm steht in der Produktionshalle, einer im Besprechungsraum der Geschäftsleitung, und jeder PC dazwischen zeigt dieselben Zahlen. Dafür habe ich mit Marelle eine komplette Dashboard-Suite entwickelt und im Betrieb eingeführt, ohne Webserver und ohne Datenbank:
 
 - **Buchen:** Bediener buchen an den Terminals in der Halle direkt im ERP.
 - **Abholen:** Ein Export-PC holt die ERP-Daten stündlich per Browser-Automatisierung in Python ab, KPI-Berichte zweimal am Tag.
@@ -50,7 +50,7 @@ Zur Suite gehören das **Wallboard** (die laufende Schicht auf dem Hallenbildsch
 
 `HTML/CSS/JavaScript` · `three.js` · `glTF mit meshopt` · `Python` · `Node.js` · `Geplante Tasks` · `Synchronisierte Dokumentbibliothek`
 
-_Eigenes, KI-gestützt umgesetztes Portfolio-Projekt mit ausschließlich erfundenen Daten: alle gezeigten Daten sind erfunden, auch Firmenname, Maschinen, Aufträge und Sendungen. Eine öffentliche Demo gibt es nicht, deshalb verlinke ich das Video._
+_KI-gestützt umgesetzt und im Betrieb im Einsatz. Zum Schutz des Unternehmens sind alle hier gezeigten Daten erfunden, auch Firmenname, Maschinen, Aufträge und Sendungen. Eine öffentliche Demo gibt es deshalb nicht, stattdessen verlinke ich das Video._
 
 
 ### [AI Incident Control](https://mvstnz.github.io/ai-incident-control-demo/)
