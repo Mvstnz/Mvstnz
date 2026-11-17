@@ -24,6 +24,35 @@ Dabei geht es mir nicht um möglichst viel Technik, sondern um Lösungen, die na
 
 ## Ausgewählte Projekte
 
+### [Marelle Plant Suite](https://www.linkedin.com/feed/update/urn:li:activity:7528394520821084160/)
+
+**[Video ansehen (50 s, LinkedIn)](https://www.linkedin.com/feed/update/urn:li:activity:7528394520821084160/)** · keine öffentliche Demo, alle Daten erfunden
+
+Im Werk eines Pumpenherstellers steht ein Bildschirm in der Produktionshalle, einer im Besprechungsraum der Geschäftsleitung, und jeder PC dazwischen soll dieselben Zahlen zeigen. Dafür habe ich mit Marelle eine komplette Dashboard-Suite entwickelt, ohne Webserver und ohne Datenbank:
+
+- **Buchen:** Bediener buchen an den Terminals in der Halle direkt im ERP.
+- **Abholen:** Ein Export-PC holt die ERP-Daten stündlich per Browser-Automatisierung in Python ab, KPI-Berichte zweimal am Tag.
+- **Prüfen:** Kleine Node.js-Prozessoren ohne npm-Pakete prüfen jeden Export mit Plausibilitätsregeln (Spaltenzahl, Zeilenbereich, Buchungsfenster, Alter der neuesten Buchung, doppelte Schlüssel, Obergrenze für weggefallene Zeilen). Auffällige Exporte werden abgelehnt oder in Quarantäne gelegt, der Rest wird mit Verlauf zu kompakten Datenpaketen.
+- **Verteilen:** Seiten und Datenpakete sind einfache Dateien in einer synchronisierten Dokumentbibliothek.
+- **Anzeigen:** Jeder PC und jeder Hallenbildschirm öffnet die Seiten aus dem lokalen Ordner und lädt neue Pakete selbst nach. Die Startseite zeigt den Zustand jeder Quelle: grün aktuell, gelb älter als üblich, rot keine neuen Daten. Die Seiten zeigen dann weiter den letzten Stand.
+
+Zur Suite gehören das **Wallboard** (die laufende Schicht auf dem Hallenbildschirm, Maschine für Maschine), **Pulse** (OEE je Maschine, Linie und Schicht aus den ERP-Buchungen, mit Datenprüfungen), der **Plant Twin** (das ganze Werk als 3D-Modell mit Maschinenstatus, Maschinenkarten, Stillstands-Hotspots und Zeitraffer), das **Pump Studio** (neun CAD-Pumpenmodelle in fünf Bauarten: drehen, Schnittansicht, Explosionsansicht, technischer oder fotorealistischer Look), der **Boardroom** (die Bildschirm-Show für die Geschäftsleitung als Kamerafahrt durchs Werk, zusätzlich im handgezeichneten „Sketchboard“-Look), das **Orderdeck** (Auftragsfluss von der Buchung bis zur Rechnung, Frühwarnung für verspätete Aufträge, Kunden, Einkauf, Bestand, Excel-Exporte), der **Freight Globe** (3D-Globus und flache Karte mit jeder Sendung und jedem Wareneingang) und der **Monthly Review** (der Monat in Kürze mit Scorecard, auch als PDF). Dazu kommen Werkskalender, Telefonliste und geführte Touren für jedes der 13 Teams. Jeder sichtbare Text liegt in drei Sprachen vor.
+
+[<img src="./assets/marelle-produktion-management.jpg" alt="Links der Hallenbildschirm in der Produktion mit dem Wallboard der laufenden Schicht, rechts der Bildschirm im Besprechungsraum der Geschäftsleitung mit dem Boardroom">](https://www.linkedin.com/feed/update/urn:li:activity:7528394520821084160/)
+
+| Plant Twin: das Werk als 3D-Modell | Pump Studio: Explosionsansicht einer Pumpe |
+| --- | --- |
+| [<img src="./assets/marelle-plant-twin.jpg" alt="Plant Twin: Werkshalle als 3D-Modell, über jeder Maschine ein farbiger OEE-Balken der letzten Woche, oben Zähler für laufende, stillstehende, in Reparatur befindliche und nicht buchende Maschinen">](https://www.linkedin.com/feed/update/urn:li:activity:7528394520821084160/) | [<img src="./assets/marelle-pump-studio.jpg" alt="Pump Studio: vertikale Prozesspumpe aus Stahl in der Explosionsansicht, rechts die Liste der 17 Bauteile mit Reglern für Explosionsansicht und Laufrad">](https://www.linkedin.com/feed/update/urn:li:activity:7528394520821084160/) |
+| **Orderdeck: Auftragsfluss von der Buchung bis zur Rechnung** | **Boardroom: Kamerafahrt durchs Werk für die Geschäftsleitung** |
+| [<img src="./assets/marelle-orderdeck.jpg" alt="Orderdeck-Übersicht: Auftragsfluss in fünf Stufen von gebucht bis überfällig, darunter Liefertreue, Kennzahlen der Fertigung und Stand der Einkaufs- und Lagerdaten">](https://www.linkedin.com/feed/update/urn:li:activity:7528394520821084160/) | [<img src="./assets/marelle-boardroom.jpg" alt="Boardroom: animierte Figur zieht einen Hubwagen an Kartons vorbei, darüber eine Tafel mit den im Monat gebuchten Auftragszeilen und dem Auftragsbestand">](https://www.linkedin.com/feed/update/urn:li:activity:7528394520821084160/) |
+
+[<img src="./assets/marelle-vorschau.webp" width="600" alt="Animierte Vorschau: Kamerafahrt auf den Hallenbildschirm, dann auf den Bildschirm im Besprechungsraum, danach der Plant Twin und die Pumpe im Pump Studio">](https://www.linkedin.com/feed/update/urn:li:activity:7528394520821084160/)
+
+`HTML/CSS/JavaScript` · `three.js` · `glTF mit meshopt` · `Python` · `Node.js` · `Geplante Tasks` · `Synchronisierte Dokumentbibliothek`
+
+_Eigenes, KI-gestützt umgesetztes Portfolio-Projekt mit ausschließlich erfundenen Daten: alle gezeigten Daten sind erfunden, auch Firmenname, Maschinen, Aufträge und Sendungen. Eine öffentliche Demo gibt es nicht, deshalb verlinke ich das Video._
+
+
 ### [AI Incident Control](https://mvstnz.github.io/ai-incident-control-demo/)
 
 **[Live-Demo öffnen](https://mvstnz.github.io/ai-incident-control-demo/)** · ohne Login, alle Daten erfunden · ohne n8n-Verbindung: [Offline-Demo](https://mvstnz.github.io/ai-incident-control-demo/?offline=1)
@@ -52,35 +81,6 @@ Der **Störungsassistent** beantwortet Fragen von Bedienern in sechs Sprachen nu
 `n8n` · `Claude Haiku 5.5` · `Gemini 2.5 Flash-Lite` · `OpenAI-Embeddings` · `n8n Data Tables` · `Slack` · `React/TypeScript/Vite` · `GitHub Pages`
 
 _Eigenes, KI-gestützt umgesetztes Portfolio-Projekt mit ausschließlich erfundenen Daten. Lieferanten-Mails und ERP-Änderungen werden nur simuliert; der ausgewiesene Auftragswert ist betroffenes Volumen, keine Verlustprognose. Die Demo-Webhooks sind öffentlich und durch erlaubte Herkunft, Eingabeprüfung und eine Kostenbremse geschützt; produktiv käme eine Anmeldung davor._
-
-
-### [Marelle Plant Suite](https://www.linkedin.com/feed/update/urn:li:activity:7528394520821084160/)
-
-**[Video ansehen (50 s, LinkedIn)](https://www.linkedin.com/feed/update/urn:li:activity:7528394520821084160/)** · keine öffentliche Demo, alle Daten erfunden
-
-Im Werk eines Pumpenherstellers steht ein Bildschirm in der Produktionshalle, einer im Besprechungsraum der Geschäftsleitung, und jeder PC dazwischen soll dieselben Zahlen zeigen. Dafür habe ich mit Marelle eine komplette Dashboard-Suite entwickelt, ohne Webserver und ohne Datenbank:
-
-- **Buchen:** Bediener buchen an den Terminals in der Halle direkt im ERP.
-- **Abholen:** Ein Export-PC holt die ERP-Daten stündlich per Browser-Automatisierung in Python ab, KPI-Berichte zweimal am Tag.
-- **Prüfen:** Kleine Node.js-Prozessoren ohne npm-Pakete prüfen jeden Export mit Plausibilitätsregeln (Spaltenzahl, Zeilenbereich, Buchungsfenster, Alter der neuesten Buchung, doppelte Schlüssel, Obergrenze für weggefallene Zeilen). Auffällige Exporte werden abgelehnt oder in Quarantäne gelegt, der Rest wird mit Verlauf zu kompakten Datenpaketen.
-- **Verteilen:** Seiten und Datenpakete sind einfache Dateien in einer synchronisierten Dokumentbibliothek.
-- **Anzeigen:** Jeder PC und jeder Hallenbildschirm öffnet die Seiten aus dem lokalen Ordner und lädt neue Pakete selbst nach. Die Startseite zeigt den Zustand jeder Quelle: grün aktuell, gelb älter als üblich, rot keine neuen Daten. Die Seiten zeigen dann weiter den letzten Stand.
-
-Zur Suite gehören das **Wallboard** (die laufende Schicht auf dem Hallenbildschirm, Maschine für Maschine), **Pulse** (OEE je Maschine, Linie und Schicht aus den ERP-Buchungen, mit Datenprüfungen), der **Plant Twin** (das ganze Werk als 3D-Modell mit Maschinenstatus, Maschinenkarten, Stillstands-Hotspots und Zeitraffer), das **Pump Studio** (neun CAD-Pumpenmodelle in fünf Bauarten: drehen, Schnittansicht, Explosionsansicht, technischer oder fotorealistischer Look), der **Boardroom** (die Bildschirm-Show für die Geschäftsleitung als Kamerafahrt durchs Werk, zusätzlich im handgezeichneten „Sketchboard“-Look), das **Orderdeck** (Auftragsfluss von der Buchung bis zur Rechnung, Frühwarnung für verspätete Aufträge, Kunden, Einkauf, Bestand, Excel-Exporte), der **Freight Globe** (3D-Globus und flache Karte mit jeder Sendung und jedem Wareneingang) und der **Monthly Review** (der Monat in Kürze mit Scorecard, auch als PDF). Dazu kommen Werkskalender, Telefonliste und geführte Touren für jedes der 13 Teams. Jeder sichtbare Text liegt in drei Sprachen vor.
-
-[<img src="./assets/marelle-produktion-management.jpg" alt="Links der Hallenbildschirm in der Produktion mit dem Wallboard der laufenden Schicht, rechts der Bildschirm im Besprechungsraum der Geschäftsleitung mit dem Boardroom">](https://www.linkedin.com/feed/update/urn:li:activity:7528394520821084160/)
-
-| Plant Twin: das Werk als 3D-Modell | Pump Studio: Explosionsansicht einer Pumpe |
-| --- | --- |
-| [<img src="./assets/marelle-plant-twin.jpg" alt="Plant Twin: Werkshalle als 3D-Modell, über jeder Maschine ein farbiger OEE-Balken der letzten Woche, oben Zähler für laufende, stillstehende, in Reparatur befindliche und nicht buchende Maschinen">](https://www.linkedin.com/feed/update/urn:li:activity:7528394520821084160/) | [<img src="./assets/marelle-pump-studio.jpg" alt="Pump Studio: vertikale Prozesspumpe aus Stahl in der Explosionsansicht, rechts die Liste der 17 Bauteile mit Reglern für Explosionsansicht und Laufrad">](https://www.linkedin.com/feed/update/urn:li:activity:7528394520821084160/) |
-| **Orderdeck: Auftragsfluss von der Buchung bis zur Rechnung** | **Boardroom: Kamerafahrt durchs Werk für die Geschäftsleitung** |
-| [<img src="./assets/marelle-orderdeck.jpg" alt="Orderdeck-Übersicht: Auftragsfluss in fünf Stufen von gebucht bis überfällig, darunter Liefertreue, Kennzahlen der Fertigung und Stand der Einkaufs- und Lagerdaten">](https://www.linkedin.com/feed/update/urn:li:activity:7528394520821084160/) | [<img src="./assets/marelle-boardroom.jpg" alt="Boardroom: animierte Figur zieht einen Hubwagen an Kartons vorbei, darüber eine Tafel mit den im Monat gebuchten Auftragszeilen und dem Auftragsbestand">](https://www.linkedin.com/feed/update/urn:li:activity:7528394520821084160/) |
-
-[<img src="./assets/marelle-vorschau.webp" width="600" alt="Animierte Vorschau: Kamerafahrt auf den Hallenbildschirm, dann auf den Bildschirm im Besprechungsraum, danach der Plant Twin und die Pumpe im Pump Studio">](https://www.linkedin.com/feed/update/urn:li:activity:7528394520821084160/)
-
-`HTML/CSS/JavaScript` · `three.js` · `glTF mit meshopt` · `Python` · `Node.js` · `Geplante Tasks` · `Synchronisierte Dokumentbibliothek`
-
-_Eigenes, KI-gestützt umgesetztes Portfolio-Projekt mit ausschließlich erfundenen Daten: alle gezeigten Daten sind erfunden, auch Firmenname, Maschinen, Aufträge und Sendungen. Eine öffentliche Demo gibt es nicht, deshalb verlinke ich das Video._
 
 
 ### [JEV B2B Lead Qualification](https://github.com/Mvstnz/jev-n8n-b2b-lead-qualification)
