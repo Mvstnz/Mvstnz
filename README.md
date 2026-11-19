@@ -24,9 +24,9 @@ Dabei geht es mir nicht um möglichst viel Technik, sondern um Lösungen, die na
 
 ## Ausgewählte Projekte
 
-### [Marelle Plant Suite](https://www.linkedin.com/feed/update/urn:li:activity:7528394520821084160/)
+### [Marelle Plant Suite](https://www.linkedin.com/feed/update/urn:li:activity:7529104548167159808/)
 
-**[Video ansehen (50 s, LinkedIn)](https://www.linkedin.com/feed/update/urn:li:activity:7528394520821084160/)** · **im Betrieb im Einsatz** · gezeigt mit erfundenen Daten
+**[Video ansehen (50 s, LinkedIn)](https://www.linkedin.com/feed/update/urn:li:activity:7529104548167159808/)** · **im Betrieb im Einsatz** · gezeigt mit erfundenen Daten
 
 Marelle ist kein Demo-Projekt: Die Suite läuft produktiv in einem Fertigungsbetrieb. Ein Bildschirm steht in der Produktionshalle, einer im Besprechungsraum der Geschäftsleitung, und jeder PC dazwischen zeigt dieselben Zahlen. Dafür habe ich mit Marelle eine komplette Dashboard-Suite entwickelt, ohne Webserver und ohne Datenbank:
 
@@ -38,15 +38,15 @@ Marelle ist kein Demo-Projekt: Die Suite läuft produktiv in einem Fertigungsbet
 
 Zur Suite gehören das **Wallboard** (die laufende Schicht auf dem Hallenbildschirm, Maschine für Maschine), **Pulse** (OEE je Maschine, Linie und Schicht aus den ERP-Buchungen, mit Datenprüfungen), der **Plant Twin** (das ganze Werk als 3D-Modell mit Maschinenstatus, Maschinenkarten, Stillstands-Hotspots und Zeitraffer), das **Pump Studio** (neun CAD-Pumpenmodelle in fünf Bauarten: drehen, Schnittansicht, Explosionsansicht, technischer oder fotorealistischer Look), der **Boardroom** (die Bildschirm-Show für die Geschäftsleitung als Kamerafahrt durchs Werk, zusätzlich im handgezeichneten „Sketchboard“-Look), das **Orderdeck** (Auftragsfluss von der Buchung bis zur Rechnung, Frühwarnung für verspätete Aufträge, Kunden, Einkauf, Bestand, Excel-Exporte), der **Freight Globe** (3D-Globus und flache Karte mit jeder Sendung und jedem Wareneingang) und der **Monthly Review** (der Monat in Kürze mit Scorecard, auch als PDF). Dazu kommen Werkskalender, Telefonliste und geführte Touren für jedes der 13 Teams. Jeder sichtbare Text liegt in drei Sprachen vor.
 
-[<img src="./assets/marelle-produktion-management.jpg" alt="Links der Hallenbildschirm in der Produktion mit dem Wallboard der laufenden Schicht, rechts der Bildschirm im Besprechungsraum der Geschäftsleitung mit dem Boardroom">](https://www.linkedin.com/feed/update/urn:li:activity:7528394520821084160/)
+[<img src="./assets/marelle-produktion-management.jpg" alt="Links der Hallenbildschirm in der Produktion mit dem Wallboard der laufenden Schicht, rechts der Bildschirm im Besprechungsraum der Geschäftsleitung mit dem Boardroom">](https://www.linkedin.com/feed/update/urn:li:activity:7529104548167159808/)
 
 | Plant Twin: das Werk als 3D-Modell | Pump Studio: Explosionsansicht einer Pumpe |
 | --- | --- |
-| [<img src="./assets/marelle-plant-twin.jpg" alt="Plant Twin: Werkshalle als 3D-Modell, über jeder Maschine ein farbiger OEE-Balken der letzten Woche, oben Zähler für laufende, stillstehende, in Reparatur befindliche und nicht buchende Maschinen">](https://www.linkedin.com/feed/update/urn:li:activity:7528394520821084160/) | [<img src="./assets/marelle-pump-studio.jpg" alt="Pump Studio: vertikale Prozesspumpe aus Stahl in der Explosionsansicht, rechts die Liste der 17 Bauteile mit Reglern für Explosionsansicht und Laufrad">](https://www.linkedin.com/feed/update/urn:li:activity:7528394520821084160/) |
+| [<img src="./assets/marelle-plant-twin.jpg" alt="Plant Twin: Werkshalle als 3D-Modell, über jeder Maschine ein farbiger OEE-Balken der letzten Woche, oben Zähler für laufende, stillstehende, in Reparatur befindliche und nicht buchende Maschinen">](https://www.linkedin.com/feed/update/urn:li:activity:7529104548167159808/) | [<img src="./assets/marelle-pump-studio.jpg" alt="Pump Studio: vertikale Prozesspumpe aus Stahl in der Explosionsansicht, rechts die Liste der 17 Bauteile mit Reglern für Explosionsansicht und Laufrad">](https://www.linkedin.com/feed/update/urn:li:activity:7529104548167159808/) |
 | **Orderdeck: Auftragsfluss von der Buchung bis zur Rechnung** | **Boardroom: Kamerafahrt durchs Werk für die Geschäftsleitung** |
-| [<img src="./assets/marelle-orderdeck.jpg" alt="Orderdeck-Übersicht: Auftragsfluss in fünf Stufen von gebucht bis überfällig, darunter Liefertreue, Kennzahlen der Fertigung und Stand der Einkaufs- und Lagerdaten">](https://www.linkedin.com/feed/update/urn:li:activity:7528394520821084160/) | [<img src="./assets/marelle-boardroom.jpg" alt="Boardroom: animierte Figur zieht einen Hubwagen an Kartons vorbei, darüber eine Tafel mit den im Monat gebuchten Auftragszeilen und dem Auftragsbestand">](https://www.linkedin.com/feed/update/urn:li:activity:7528394520821084160/) |
+| [<img src="./assets/marelle-orderdeck.jpg" alt="Orderdeck-Übersicht: Auftragsfluss in fünf Stufen von gebucht bis überfällig, darunter Liefertreue, Kennzahlen der Fertigung und Stand der Einkaufs- und Lagerdaten">](https://www.linkedin.com/feed/update/urn:li:activity:7529104548167159808/) | [<img src="./assets/marelle-boardroom.jpg" alt="Boardroom: animierte Figur zieht einen Hubwagen an Kartons vorbei, darüber eine Tafel mit den im Monat gebuchten Auftragszeilen und dem Auftragsbestand">](https://www.linkedin.com/feed/update/urn:li:activity:7529104548167159808/) |
 
-[<img src="./assets/marelle-vorschau.webp" width="600" alt="Animierte Vorschau: Kamerafahrt auf den Hallenbildschirm, dann auf den Bildschirm im Besprechungsraum, danach der Plant Twin und die Pumpe im Pump Studio">](https://www.linkedin.com/feed/update/urn:li:activity:7528394520821084160/)
+[<img src="./assets/marelle-vorschau.webp" width="600" alt="Animierte Vorschau: Kamerafahrt auf den Hallenbildschirm, dann auf den Bildschirm im Besprechungsraum, danach der Plant Twin und die Pumpe im Pump Studio">](https://www.linkedin.com/feed/update/urn:li:activity:7529104548167159808/)
 
 `HTML/CSS/JavaScript` · `three.js` · `glTF mit meshopt` · `Python` · `Node.js` · `Geplante Tasks` · `Synchronisierte Dokumentbibliothek`
 
